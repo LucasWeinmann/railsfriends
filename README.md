@@ -1,24 +1,7 @@
-# README
+# Friends list app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello my name Lucas Weinmann and I work at Seasoned.
+This is my first RoR app, based on John Elder's course.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Loved it.
+https://www.youtube.com/watch?v=fmyvWz5TUWg&t=4974s

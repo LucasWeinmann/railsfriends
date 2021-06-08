@@ -14,7 +14,7 @@
     <%= form.text_field :first_name, class: "form-control", placeholder: "First name" %>
   </div>
 <br/>
-  <div class="field form-group">
+  <div class="field form-group" required>
     <%= form.text_field :last_name, class: "form-control", placeholder: "Last name" %>
   </div>
 <br/>
@@ -28,6 +28,9 @@
 <br/>
 <div class="field form-group">
   <%= form.number_field :user_id, id: :friend_user, class: "form-control", value: current_user.id, type: :hidden %>
+</div>
+<div class="field form-select">
+  <%= form.select :friend_type, Friend::FRIEND_TYPE, {class:"form-control"}, prompt: "Which type of friend is this?" %>
 </div>
 <br/>
   <div class="actions">

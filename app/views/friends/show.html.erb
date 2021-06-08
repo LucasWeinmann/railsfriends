@@ -1,13 +1,16 @@
 <div class="card">
   <div class="card-header">
-    Friend
+    Friend's info
   </div>
   <div class="card-body">
-     <h5 class="card-title"><%= @friend.first_name %> <%= @friend.last_name %></h5>
-    <br>
-    <p class="card-text"><%= @friend.email %></p>
-    <p class="card-text"><%= @friend.twitter %></p>
-    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-light" %>
-    <%= link_to 'Back', friends_path, class:"btn btn-light" %>
+    <h2 class="card-title"><%= @friend.first_name %> <%= @friend.last_name %></h2>
+    <br/>
+    <p class="card-text">Email: <%= @friend.email %></p>
+    <p class="card-text">Twitter: <%= @friend.twitter %></p>
+    <p class="badge rounded-pill bg-warning"><%= @friend.friend_type %></p>
+  
   </div>
 </div>
+<br/>
+<%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-light" %>
+<%= link_to 'Back', friends_path, class:"btn btn-light" %>

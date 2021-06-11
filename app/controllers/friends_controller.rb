@@ -65,7 +65,6 @@ def correct_user
   redirect_to friends_path, notice: "I am sorry, but you are not authorized to edit this friend." if @friend.nil?
 end
 
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_friend

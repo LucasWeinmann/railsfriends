@@ -1,3 +1,18 @@
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<style>
+.logo {
+   font-size: 100px;
+   padding: 50px;
+   font-family: 'Montserrat', sans-serif;
+   text-align: center;
+   background: white;
+   box-shadow: 0 20px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.23);
+}
+ }
+</style>
+
+
 <% if user_signed_in? %>
 
 <!--
@@ -48,6 +63,11 @@
   <%= link_to 'New Friend', new_friend_path, class:"btn btn-dark" %>
 
 <% else %>
+<div class="logo">
+FRIENDS
+</div>
+<br/>
+<br/>
 <h1>If you are here, it means you are a dear friend of mine. </h1>
 <br/>
 <p>This is my first app. I am starting to learn a basic CRUD.</p>
